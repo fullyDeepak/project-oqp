@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira Sans Extra Condensed:wght@400;500&display=swap');
+html,
+body,
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
 
 p {
   text-align: justify;
@@ -8,7 +17,6 @@ p {
 main {
   position: relative;
   margin: 11% 10%;
-  font-family: 'Fira Sans Extra Condensed';
   font-weight: 500;
   font-size: 5vw;
   display: flex;
@@ -99,7 +107,7 @@ main div:first-child img {
 .service-div {
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin: 15px;
   padding: 20px;
   border-radius: 15px;
   transition: all 0.3s;
@@ -116,12 +124,14 @@ main div:first-child img {
 }
 .service-div p:nth-child(2) {
   font-size: 2.5rem;
+  font-weight: 600;
   margin-top: 20px;
   margin-bottom: 40px;
 }
 .service-div p:nth-child(3) {
   line-height: 1.8rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  text-align: start;
 }
 .service-div button,
 .work-div button {
@@ -136,6 +146,15 @@ main div:first-child img {
   margin-bottom: 20px;
   cursor: pointer;
   transition: background-image 1s;
+  background-color: transparent;
+}
+
+.work-div button {
+  background-color: #eeeeee;
+}
+
+.service-div:hover button {
+  background-image: linear-gradient(90deg, #d2d2d2 0%, #eeeeee 100%);
 }
 
 .service-div button:hover,
@@ -236,6 +255,7 @@ main div:first-child img {
 .work-div p:nth-child(1) {
   color: #50162e;
   font-size: 4rem;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 .work-div p:nth-child(2) {
   color: #50162e;
@@ -433,6 +453,7 @@ form button:focus {
   top: 10%;
   left: -6rem;
   box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
+  transform: scale(0.9);
 }
 
 .our-office-div p:nth-child(1) {
