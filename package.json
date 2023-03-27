@@ -1,0 +1,24 @@
+{
+  "name": "project-oqp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullyDeepak/project-oqp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fullyDeepak/project-oqp/issues"
+  },
+  "homepage": "https://github.com/fullyDeepak/project-oqp#readme",
+  "devDependencies": {
+    "vite": "^4.2.1"
+  }
+}

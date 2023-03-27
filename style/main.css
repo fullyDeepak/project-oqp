@@ -9,11 +9,6 @@ a {
   cursor: pointer;
 }
 
-p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 main {
   position: relative;
   margin: 11% 10%;
@@ -121,9 +116,10 @@ main div:first-child img {
 .service-div img {
   max-width: 25%;
   aspect-ratio: 4/5;
+  margin-left: 45px;
 }
 .service-div p:nth-child(2) {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -131,7 +127,12 @@ main div:first-child img {
 .service-div p:nth-child(3) {
   line-height: 1.8rem;
   font-size: 1.2rem;
+  display: -webkit-box;
   text-align: start;
+  font-weight: 600;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .service-div button,
 .work-div button {
@@ -380,6 +381,10 @@ button i {
   padding-bottom: 2rem;
 }
 
+form {
+  width: 70%;
+}
+
 form input {
   background-color: #eeeeee;
   width: 100%;
@@ -391,7 +396,8 @@ form input {
   border: none;
 }
 
-form input:focus {
+form input:focus,
+form textarea:focus {
   outline-color: #8a3461;
 }
 
@@ -408,7 +414,7 @@ form div:nth-child(3) {
 form textarea {
   resize: none;
   background-color: #eeeeee;
-  outline: none;
+
   border: none;
   border-radius: 12px;
   width: 100%;
@@ -442,7 +448,7 @@ form button:focus {
 .our-office-div {
   background-color: #8a3460;
   color: white;
-  font-weight: 500;
+  font-weight: 700;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -540,6 +546,12 @@ footer ~ p {
   padding-bottom: 1rem;
 }
 
+@media (min-width: 861px) and (max-width: 1200px) {
+  .our-office-div p:nth-child(n + 2) {
+    margin-right: 2.5rem;
+    display: flex;
+  }
+}
 @media (min-width: 320px) and (max-width: 860px) {
   main {
     margin: 35vh 5%;
@@ -592,6 +604,7 @@ footer ~ p {
     padding: 0;
     box-shadow: none;
     border-radius: 0;
+    width: 100%;
   }
   form {
     width: 86%;
