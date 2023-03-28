@@ -20,7 +20,7 @@ main {
   user-select: none;
   white-space: nowrap;
   pointer-events: none;
-  /* z-index: 10; */
+  z-index: -10;
 }
 
 main .bg-img {

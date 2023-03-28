@@ -97,7 +97,7 @@ body {
   height: 60px;
 }
 
-nav ul.dropdown-list {
+.navbar-sticky ul.dropdown-list {
   list-style-type: none;
   display: none;
   background: white;
@@ -106,11 +106,15 @@ nav ul.dropdown-list {
   width: max-content;
   /* z-index: 9999; */
   left: 50%;
-  top: 180%;
+  top: 132%;
   transform: translateX(-50%);
   opacity: 0;
   border-radius: 0px 0px 20px 20px;
   box-shadow: 0 0 3px 0.2px rgba(0, 0, 0, 0.3);
+}
+
+.is-sticky ul.dropdown-list {
+  top: 108%;
 }
 
 .display-block {

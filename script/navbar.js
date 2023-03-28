@@ -6,7 +6,6 @@ const chevron = document.getElementsByClassName('chevron')[0];
 const dropdownList = document.getElementsByClassName('dropdown-list')[0];
 dropdownBtn.addEventListener('click', () => {
   dropdownList.classList.toggle('navbar-animation');
-  dropdownList.classList.toggle('navbar-animation');
   dropdownList.classList.toggle('display-block');
   chevron.classList.toggle('rotate180');
 });
